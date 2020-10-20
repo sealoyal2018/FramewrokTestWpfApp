@@ -37,15 +37,15 @@
             Background="#FFE9E9E9"
             BorderBrush="#FF96DFFF"
             ItemsSource="{Binding Items}">
-            <local:TreeListView.Heanders>
-                <GridViewColumnCollection>
-                    <GridViewColumn CellTemplate="{StaticResource CellTemplate_Name}" Header="FullName" />
-                    <GridViewColumn DisplayMemberBinding="{Binding JobTitle}" Header="JobTitle" />
-                    <GridViewColumn DisplayMemberBinding="{Binding Country}" Header="Country" />
-                    <GridViewColumn DisplayMemberBinding="{Binding BirthDate}" Header="BirthDate" />
-                    <GridViewColumn DisplayMemberBinding="{Binding Phone}" Header="Phone" />
-                </GridViewColumnCollection>
-            </local:TreeListView.Heanders>
+            <local:TreeListView.ViewColumns>
+                <local:TreeListViewColumnCollection>
+                    <local:TreeListViewColumn Field="FullName" Header="全名" />
+                    <local:TreeListViewColumn Field="JobTitle" Header="工作" />
+                    <local:TreeListViewColumn Field="Country" Header="国家" />
+                    <local:TreeListViewColumn Field="BirthDate" Header="生日" />
+                    <local:TreeListViewColumn Field="Phone" Header="电话" />
+                </local:TreeListViewColumnCollection>
+            </local:TreeListView.ViewColumns>
             <local:TreeListView.ItemTemplate>
                 <HierarchicalDataTemplate ItemsSource="{Binding Children}" />
             </local:TreeListView.ItemTemplate>

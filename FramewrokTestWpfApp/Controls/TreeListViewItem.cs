@@ -30,13 +30,5 @@ namespace FramewrokTestWpfApp.Controls
         protected override bool IsItemItsOwnContainerOverride(object item) {
             return item is TreeListViewItem;
         }
-
-        public int ItemHeight {
-            get { return (int)GetValue(ItemHeightProperty); }
-            set { SetValue(ItemHeightProperty, value); }
-        }
-
-        public static readonly DependencyProperty ItemHeightProperty =
-            DependencyProperty.Register("ItemHeight", typeof(int), typeof(TreeListViewItem), new PropertyMetadata(30));
     }
 }

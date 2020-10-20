@@ -96,7 +96,10 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="AppBootstrapper.cs" />
+    <Compile Include="Controls\TreeGrid.cs" />
     <Compile Include="Controls\TreeListView.cs" />
+    <Compile Include="Controls\TreeListViewColumn.cs" />
+    <Compile Include="Controls\TreeListViewColumnCollection.cs" />
     <Compile Include="Controls\TreeListViewItem.cs" />
     <Compile Include="Converters\LevelToIndentConverter.cs" />
     <Compile Include="Interfaces\IShell.cs" />
@@ -110,6 +113,10 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Themes\TreeGridTheme.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Themes\TreeListViewTheme.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
