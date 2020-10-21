@@ -210,5 +210,10 @@ namespace FramewrokTestWpfApp.Controls
 
             return grid;
         }
+
+        public override void OnApplyTemplate() {
+            base.OnApplyTemplate();
+            var resource = Resources["CellTemplate_Name"];
+        }
     }
 }
