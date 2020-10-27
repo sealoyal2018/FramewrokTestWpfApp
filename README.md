@@ -4,5 +4,5 @@ WPF 自定义控件
 
 效果如下 
 
-![](https://github.com/RSDTE/FramewrokTestWpfApp/blob/master/%E5%9B%BE%E7%89%87.png)
+![image](https://github.com/RSDTE/FramewrokTestWpfApp/blob/master/%E5%9B%BE%E7%89%87.png)
 
